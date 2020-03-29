@@ -1,2 +1,8 @@
 #Deploying my web app
-If I would deploy a website or in this case this Laravel app, I will just follow this normal logic which is simple and fast but not the best anyway. After buying a hosting plan with domain now I will try start
+For deploying this Laravel app, I will just follow this normal logic which is simple and fast but not the best, anyway this is a popular method for me. After buying a hosting plan with a domain registred, now I will start the cpanel interface and create a database then my domain which I will save my data exporting those tables from my local machine (XAMPP) and now I will import them in the remote version of my PhpMyAdmin in an empty database. Database is bulid now I will bring my files in my server with File Zilla. Now I will connect using Cpanel details with domain and ACCOUNT in File Zilla for uploading the full aplication in new file in my case for example(TESTTASK)but except for the public folder because this I will bring it in the public_html folder. Now in the index.php of public_html folder, I will edit outside of the public_html folder to include the name of the folder which I uploded the other files (TESTTASK), in the {require __DIR__.'/../TESTTASK/vendor/autoload.php';} AND also in the {$app = require_once __DIR__.'/../TESTTASK/bootstrap/app.php';}, now save, reuploud and that will be ok. The other step is to edit the database credentials same as in the remote domain in the .env files in the TESTTASK folder oustide of the File Zilla same as as the first one of index.php of Public_html folder.
+
+that is it for deploying this Laravel app to a shared hosting.
+
+Best,
+
+Arditi.

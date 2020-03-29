@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ Session::token() }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">   
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <title>{{ config('app.name', 'task') }}</title>
+        <title>{{ config('app.name', 'taskjob') }}</title>
     </head>
     <body>
        @include('inc.navbar')
